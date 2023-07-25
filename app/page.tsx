@@ -8,7 +8,6 @@ export default function Home() {
         <h1 className='text-center font-bold text-xl'>Inventario de Carros</h1><br />
         <Inventario />
       </div>
-        <AddCarro />
     </div>
   )
 }
