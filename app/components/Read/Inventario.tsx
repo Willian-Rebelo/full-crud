@@ -1,17 +1,17 @@
-import sql from '../db.js'
+import sql from '../../db.js'
 
 export default async function Inventario () {
-  const cars = await sql`SELECT id, brand, model from cars`;
+  const cars = await sql`SELECT id, brand, model, release_date from cars`;
     
   return (
     <div className='flex justify-center items-center'>
       <ul className='h-72 bg-blue-950 p-5 rounded-lg font'>
           {cars.map((c) => (
               <li key={c.id} className='text-lg'>
-                  {c.id} - {c.brand} ({c.model})
+                  {c.id} - {c.brand} ({c.model}) : ({c.release_date})
             </li>
           ))}
-          <button className=' relative left-36 top-24 bg-slate-500 rounded-md p-2'>Adicionar Carro</button>
+      <button className=' relative left-52 top-24 bg-slate-500 rounded-md p-2'>Adicionar Carro</button>
       </ul>
     </div>
   )
