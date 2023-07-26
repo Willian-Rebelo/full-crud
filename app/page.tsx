@@ -1,5 +1,6 @@
 import Inventario from './components/Read/Inventario'
 import AddCar from './components/Create/PopUp/AddCar'
+// import EditCar from './components/Update/editCar'
 
 export default function Home() {
   return (
@@ -7,7 +8,8 @@ export default function Home() {
       <div className='relative top-10'>
         <h1 className='text-center font-bold text-xl'>Inventario de Carros</h1><br />
         <Inventario />
-        <AddCar />
+        {/* <AddCar /> */}
+        {/* <EditCar /> */}
       </div>
     </div>
   )

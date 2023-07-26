@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from "react"
 import { Create } from "../create"
 
 export default async function AddCar () {
