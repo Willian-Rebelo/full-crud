@@ -1,6 +1,6 @@
 'use client'
 
-import { Create } from "../create"
+import { Create } from "@/app/API/crud"
 
 export default async function AddCar () {
     let brand = ''
