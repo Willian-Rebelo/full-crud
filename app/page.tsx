@@ -8,7 +8,7 @@ export default function Home() {
       <div className='relative top-10'>
         <h1 className='text-center font-bold text-xl'>Inventario de Carros</h1><br />
         <Inventario />
-        {/* <AddCar /> */}
+        <AddCar />
         {/* <EditCar /> */}
       </div>
     </div>
