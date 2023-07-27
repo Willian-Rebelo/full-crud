@@ -33,9 +33,9 @@ export default async function AddCar () {
     
     
     return (
-        <div id="modalOpen" className="flex justify-center items-center bg-slate-600 rounded-xl px-5 py-5">
+        <div id="modalOpen" className="flex justify-center items-center bg-slate-500 rounded-xl px-5 ">
             <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center">
-                <h3 className="font-bold text-lg mb-5">Adicionar Carro ao Inventário</h3>
+                <h3 className="font-bold text-lg mb-4">Adicionar Carro ao Inventário</h3>
                 <input type="text" placeholder="Nome do Veículo" onChange={onChangeBrand} name="brand" className="w-72 h-5 rounded text-black mb-5 p-5"/> 
                 <input type="text" placeholder="Modelo" onChange={onChangeModel} name="model" className="w-72 h-5 rounded text-black mb-5 p-5"/>
                 <input type="number" placeholder="Ano de Lançamento" onChange={onChangeRelease_date} name="release_date" className="w-72 h-5 rounded text-black mb-5 p-5"/>
